@@ -115,6 +115,15 @@ figure#conky-screenshot img {
 	width: 100%;
 	border: transparent;
 }
+figure#nyan {
+        float: right;
+        margin: 0 .5em;
+        width: 10em;
+}
+figure#nyan img {
+        width: 100%;
+        border: transparent;
+}
 li {
     display: table;
     padding-bottom: 4px;
