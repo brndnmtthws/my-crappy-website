@@ -115,9 +115,14 @@ figure#conky-screenshot img {
 	width: 100%;
 	border: transparent;
 }
+li {
+    display: table;
+    padding-bottom: 4px;
+    padding-top: 1px;
+}
 #achievements ul li {
 	list-style-type: none;
-	height: 2.2em;
+	height: 1.45em;
 }
 #links ul li {
 	list-style-type: none;
