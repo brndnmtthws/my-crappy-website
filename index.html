@@ -102,6 +102,10 @@
         <script type="text/javascript">
           clippy.load('Links', function(agent) {
               agent.show();
+              (function worker() {
+                agent.animate();
+                setTimeout(worker, Math.random() * 100000 + 5000);
+              })();
           });
         </script>
 </html>
