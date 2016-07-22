@@ -137,6 +137,10 @@ li {
 	list-style-type: none;
 	height: 1.45em;
 }
+#published ul li {
+	list-style-type: none;
+	height: 1.45em;
+}
 #talks ul li {
 	list-style-type: none;
 	height: 1.45em;
