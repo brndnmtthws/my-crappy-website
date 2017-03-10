@@ -75,8 +75,9 @@
     </ul>
   </section>
 
-  <p />
-  <div class="parallax"></div>
+  <p>
+    <div class="parallax"></div>
+  </p>
 
   <section id="published">
     <h1>Some Things I've Published</h1>
@@ -117,17 +118,16 @@
   <footer>
     <p>Design &copy; 2011 <a href="mailto:adriaan@leijnse.net">Adriaan Leijnse</a>, licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
   </footer>
-</body>
 
-<script type="text/javascript">
-clippy.load('Links', function(agent) {
-  agent.show();
-  fn = (function worker() {
-    agent.animate();
-    setTimeout(worker, Math.random() * 150000 + 5000);
+  <script type="text/javascript">
+  clippy.load('Links', function(agent) {
+    agent.show();
+    fn = (function worker() {
+      agent.animate();
+      setTimeout(worker, Math.random() * 150000 + 5000);
+    });
+    setTimeout(fn, Math.random() * 10000 + 5000);
   });
-  setTimeout(fn, Math.random() * 10000 + 5000);
-});
-</script>
-
+  </script>
+</body>
 </html>
