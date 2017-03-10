@@ -156,7 +156,7 @@ footer p {
 }
 .parallax {
     background-image: url("/I-AM-BREM.png");
-    min-height: 200px;
+    min-height: 140px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
