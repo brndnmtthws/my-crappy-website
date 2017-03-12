@@ -124,6 +124,15 @@ figure#nyan img {
         width: 100%;
         border: transparent;
 }
+figure#snapcode {
+        float: right;
+        margin: 0 .5em;
+        width: 10em;
+}
+figure#snapcode img {
+        width: 100%;
+        border: transparent;
+}
 li {
     display: table;
     padding-bottom: 4px;
