@@ -11,6 +11,7 @@
   margin: 0 auto;
   padding: 10px;
   left: 0px;
+  position: fixed;
 }
 .video-content video {
   width: 100%;
@@ -27,19 +28,16 @@
 }
 
 .myface {
-  position: relative;
-  width: 200px;
-  height: 200px;
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
   overflow: hidden;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   border-radius: 50%;
   box-shadow: 0px 0px 16px 1px #000;
+  top: 55px;
+  right: 55px;
   padding: 5px;
   float: right;
-  top: 50px;
 }
 
 .faceitem {
