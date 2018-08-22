@@ -16,6 +16,7 @@
 .video-content video {
   width: 100%;
   display: none;
+  border-radius: 5vw;
 }
 .video-content:before {
   content: "";
