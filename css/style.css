@@ -5,215 +5,302 @@
  * Colour scheme: http://colorschemedesigner.com/#3v11TrrcHubw0
  */
 
+.video-content {
+  display: none;
+  position: absolute;
+  margin: 0 auto;
+  padding: 10px;
+  left: 0px;
+}
+.video-content video {
+  width: 100%;
+  display: none;
+}
+.video-content:before {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .myface {
-	position: relative;
-	width: 200px;
-	height: 200px;
-	overflow: hidden;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-	box-shadow: 0px 0px 16px 1px #000;
-	padding: 5px;
-	float: right;
-	top: 50px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 16px 1px #000;
+  padding: 5px;
+  float: right;
+  top: 50px;
 }
 
- .faceitem {
-   position: absolute;
-   top: 0;
-   left: 0;
- }
+.faceitem {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
- .faceitem img {
-	 object-fit: contain;
-   -webkit-transition: 0.2s ease;
-   transition: 0.2s ease;
-	 display: inline;
-	 margin: 0 auto;
-	 width: 100%;
+.faceitem img {
+  object-fit: contain;
+  transition: 0.2s ease;
+  display: inline;
+  margin: 0 auto;
+  width: 100%;
+}
 
- }
-
- .myface:hover {
-	 /*width: 250px;
+.myface:hover {
+  /*width: 250px;
 	 height: 250px;*/
-   -webkit-transition: 0.2s ease;
-   transition: 0.2s ease;
-   -webkit-transform: scale(1.2);
-   transform: scale(1.2);
+  transition: 0.2s ease;
+  transform: scale(1.2);
 }
 
- .myface:hover .faceitem img {
-   -webkit-transform: scale(3.2);
-   transform: scale(3.2);
- }
+.myface:hover .faceitem img {
+  transform: translate(0, 100px) scale(3.2);
+}
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 1em;
-	font-weight: 400;
-	font-style: normal;
-	font-family: 'Droid Sans', sans-serif;
-	vertical-align: baseline;
-	background: transparent;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Droid Sans", sans-serif;
+  vertical-align: baseline;
+  background: transparent;
 }
 html {
-	font-size: 100.01%;
+  font-size: 100.01%;
 }
 body {
-	position: relative;
-	padding: 0em 1em 1em 1em;
-	background-color: white;
-	font-size: 1em;
-	word-spacing: 0em;
+  position: relative;
+  padding: 0em 1em 1em 1em;
+  background-color: white;
+  font-size: 1em;
+  word-spacing: 0em;
 }
 /* Hack to make lightbox work, doesn't always take <html>
  * for shadow size.
  */
-body section, body header, body footer {
-	max-width: 45em;
-	margin-left: auto;
-	margin-right: auto;
+body section,
+body header,
+body footer {
+  max-width: 45em;
+  margin-left: auto;
+  margin-right: auto;
 }
 p {
-	line-height: 1.45em;
-	margin-top: 1em;
+  line-height: 1.45em;
+  margin-top: 1em;
 }
 a {
-	color: #7D6240;
-	text-decoration: none;
-	font-weight: normal;
+  color: #7d6240;
+  text-decoration: none;
+  font-weight: normal;
 }
 a:hover {
-	color: #AB8A61;
+  color: #ab8a61;
 }
 strong.disclaimer {
-	font-style: italic;
+  font-style: italic;
 }
 strong.emphasis {
-	font-style: italic;
+  font-style: italic;
 }
 strong.attention {
-	font-weight: bold;
-	font-size: 1.1em;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 header h1 {
-	padding-top: 0.5em;
-	color: #3F7AA0;
-	font-family: 'Kameron', arial, serif;
-	font-weight: 400;
-	font-size: 4em;
-	letter-spacing: .03em;
+  padding-top: 0.5em;
+  color: #3f7aa0;
+  font-family: "Kameron", arial, serif;
+  font-weight: 400;
+  font-size: 4em;
+  letter-spacing: 0.03em;
 }
 header h2 {
-	margin: 1.8em 0;
-	color: #132531;
-	font-size: 1.3em;
-	letter-spacing: 0em;
-	line-height:1.3em;
+  margin: 1.8em 0;
+  color: #132531;
+  font-size: 1.3em;
+  letter-spacing: 0em;
+  line-height: 1.3em;
 }
 
 section h1 {
-	margin: 1.3em 0 .5em 0;
-	color: #132531;
-	font-size: 2em;
-	font-family: 'Kameron', arial, serif;
-	font-weight: 400;
-	letter-spacing: .2em;
+  margin: 1.3em 0 0.5em 0;
+  color: #132531;
+  font-size: 2em;
+  font-family: "Kameron", arial, serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
 }
 section section h1 {
-	color: #7D6240;
-	margin-top: 1.5em;
-	font-family: 'Droid Sans', sans-serif;
-	font-size: 1.2em;
-	letter-spacing: .06em;
-	font-weight: normal;
+  color: #7d6240;
+  margin-top: 1.5em;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.06em;
+  font-weight: normal;
 }
 figure#conky-screenshot {
-	float: right;
-	margin: 0 .5em;
-	width: 10em;
+  float: right;
+  margin: 0 0.5em;
+  width: 10em;
 }
 figure#conky-screenshot figcaption {
-	margin: .3em;
-	font-size: .8em;
-	text-align: center;
+  margin: 0.3em;
+  font-size: 0.8em;
+  text-align: center;
 }
 figure#conky-screenshot img {
-	width: 100%;
-	border: transparent;
+  width: 100%;
+  border: transparent;
 }
 figure#nyan {
-        float: right;
-        margin: 0 .5em;
-        width: 10em;
+  float: right;
+  margin: 0 0.5em;
+  width: 10em;
 }
 figure#nyan img {
-        width: 100%;
-        border: transparent;
+  width: 100%;
+  border: transparent;
 }
 figure#snapcode {
-        float: right;
-        margin: 0 .5em;
-        width: 10em;
+  float: right;
+  margin: 0 0.5em;
+  width: 10em;
 }
 figure#snapcode img {
-        width: 100%;
-        border: transparent;
+  width: 100%;
+  border: transparent;
 }
 li {
-    display: table;
-    padding-bottom: 4px;
-    padding-top: 1px;
+  display: table;
+  padding-bottom: 4px;
+  padding-top: 1px;
 }
 #achievements ul li {
-	list-style-type: none;
-	height: 1.45em;
+  list-style-type: none;
+  height: 1.45em;
 }
 #links ul li {
-	list-style-type: none;
-	height: 1.45em;
+  list-style-type: none;
+  height: 1.45em;
 }
 #published ul li {
-	list-style-type: none;
-	height: 1.45em;
+  list-style-type: none;
+  height: 1.45em;
 }
 #talks ul li {
-	list-style-type: none;
-	height: 1.45em;
+  list-style-type: none;
+  height: 1.45em;
 }
 footer {
-	margin-top: 4em;
+  margin-top: 4em;
 }
 footer p {
-	text-align: center;
-	font-size: .8em;
-	color: #132531;
-	padding: 0 25%;
+  text-align: center;
+  font-size: 0.8em;
+  color: #132531;
+  padding: 0 25%;
 }
 .parallax {
-    background-image: url("/I-AM-BREM.png");
-    min-height: 140px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-		background-size: 100%;
+  background-image: url("/I-AM-BREM.png");
+  min-height: 140px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
