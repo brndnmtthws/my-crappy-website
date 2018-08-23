@@ -8,6 +8,8 @@
 .video-content {
   display: none;
   position: absolute;
+  overflow: hidden;
+  float: left;
   margin: 0 auto;
   padding: 10px;
   left: 0px;
@@ -17,6 +19,7 @@
   width: 100%;
   display: none;
   border-radius: 5vw;
+  filter: opacity(90%);
 }
 .video-content:before {
   content: "";

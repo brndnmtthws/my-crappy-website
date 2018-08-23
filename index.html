@@ -188,12 +188,12 @@
       setTimeout(fn, Math.random() * 10000 + 5000);
     });
     $('#hello-please').click(function () {
-      $('#hello-video').show();
-      $('#player').show();
+      $('#hello-video').fadeIn();
+      $('#player').fadeIn();
       $('#player').get(0).play();
       $('#player').on('ended', function () {
-        $('#hello-video').hide();
-        $('#player').hide();
+        $('#hello-video').fadeOut();
+        $('#player').fadeOut();
       });
       $('')
     })
