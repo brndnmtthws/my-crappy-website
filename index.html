@@ -194,7 +194,7 @@
       $('#player').on('ended', function () {
         $('#hello-video').fadeOut();
         $('#player').fadeOut();
-        var vids = ["a","b","c","d","e"];
+        var vids = ["a","b","c","d","e","f"];
         var w = vids[Math.floor(Math.random() * vids.length)];
         setTimeout(() => {
           $('#player').attr("src", "/welcome-" + w + ".mp4");
