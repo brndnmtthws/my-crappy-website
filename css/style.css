@@ -1,12 +1,9 @@
-html { visibility:hidden; }
-
 /*
  * Copyright 2011 Adriaan Leijnse <adriaan@leijnse.net>
  * Released under the Creative Commons Attribution-ShareAlike 3.0 license
  * http://creativecommons.org/licenses/by-sa/3.0/
  * Colour scheme: http://colorschemedesigner.com/#3v11TrrcHubw0
  */
-
 .video-content {
   display: none;
   position: absolute;
@@ -17,12 +14,14 @@ html { visibility:hidden; }
   left: 0px;
   position: fixed;
 }
+
 .video-content video {
   width: 100%;
   display: none;
   border-radius: 5vw;
   filter: opacity(90%);
 }
+
 .video-content:before {
   content: "";
   position: absolute;
@@ -84,6 +83,7 @@ nav,
 section {
   display: block;
 }
+
 html,
 body,
 div,
@@ -165,9 +165,11 @@ video {
   vertical-align: baseline;
   background: transparent;
 }
+
 html {
   font-size: 100.01%;
 }
+
 body {
   position: relative;
   padding: 0em 1em 1em 1em;
@@ -175,6 +177,7 @@ body {
   font-size: 1em;
   word-spacing: 0em;
 }
+
 /* Hack to make lightbox work, doesn't always take <html>
  * for shadow size.
  */
@@ -185,28 +188,35 @@ body footer {
   margin-left: auto;
   margin-right: auto;
 }
+
 p {
   line-height: 1.45em;
   margin-top: 1em;
 }
+
 a {
   color: #7d6240;
   text-decoration: none;
   font-weight: normal;
 }
+
 a:hover {
   color: #ab8a61;
 }
+
 strong.disclaimer {
   font-style: italic;
 }
+
 strong.emphasis {
   font-style: italic;
 }
+
 strong.attention {
   font-weight: bold;
   font-size: 1.1em;
 }
+
 header h1 {
   padding-top: 0.5em;
   color: #3f7aa0;
@@ -216,6 +226,7 @@ header h1 {
   font-display: auto;
   letter-spacing: 0.03em;
 }
+
 header h2 {
   margin: 1.8em 0;
   color: #132531;
@@ -233,6 +244,7 @@ section h1 {
   font-display: auto;
   letter-spacing: 0.2em;
 }
+
 section section h1 {
   color: #7d6240;
   margin-top: 1.5em;
@@ -242,68 +254,83 @@ section section h1 {
   letter-spacing: 0.06em;
   font-weight: normal;
 }
+
 figure#conky-screenshot {
   float: right;
   margin: 0 0.5em;
   width: 10em;
 }
+
 figure#conky-screenshot figcaption {
   margin: 0.3em;
   font-size: 0.8em;
   text-align: center;
 }
+
 figure#conky-screenshot img {
   width: 100%;
   border: transparent;
 }
+
 figure#nyan {
   float: right;
   margin: 0 0.5em;
   width: 10em;
 }
+
 figure#nyan img {
   width: 100%;
   border: transparent;
 }
+
 figure#snapcode {
   float: right;
   margin: 0 0.5em;
   width: 10em;
 }
+
 figure#snapcode img {
   width: 100%;
   border: transparent;
 }
+
 li {
   display: table;
   padding-bottom: 4px;
   padding-top: 1px;
 }
+
 #achievements ul li {
   list-style-type: none;
   height: 1.45em;
 }
+
 #links ul li {
   list-style-type: none;
   height: 1.45em;
 }
+
 #published ul li {
   list-style-type: none;
   height: 1.45em;
 }
+
 #talks ul li {
   list-style-type: none;
   height: 1.45em;
 }
+
 footer {
   margin-top: 4em;
 }
+
 footer p {
   text-align: center;
   font-size: 0.8em;
   color: #132531;
   padding: 0 25%;
 }
+
 .parallax {
   background-image: url("/I-AM-BREM.webp");
   min-height: 140px;
@@ -311,4 +338,25 @@ footer p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+#cover {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #f2f2f2;
+  z-index: 9999;
+  font-size: 4em;
+  justify-content: center;
+}
+
+#cover p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }

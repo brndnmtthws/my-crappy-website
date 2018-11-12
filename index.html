@@ -14,9 +14,13 @@
   <link rel="stylesheet" href="/css/css.css" type="text/css" />
   <link rel="icon" type="image/png" href="/favicon.ico" />
   <link rel="preconnect" href="https://s3.amazonaws.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
 </head>
 
 <body>
+  <div id="cover">
+    <p>😀</p>
+  </div>
   <div id="hello-video" class="video-content">
     <video id="player" src="/welcome-a.mp4"></video>
   </div>
@@ -201,12 +205,10 @@
     WebFont.load({
       google: {
         families: ['Droid Sans', 'Kameron']
-      },
-      active: function() {
-        $(document).ready(function() {
-          document.getElementsByTagName("html")[0].style.visibility = "visible";
-        });
       }
+    });
+    $(window).on('load', function() {
+      $("#cover").hide();
     });
   </script>
 </body>
