@@ -205,10 +205,12 @@
     WebFont.load({
       google: {
         families: ['Droid Sans', 'Kameron']
+      },
+      active: function () {
+        $(window).on('load', function() {
+          $("#cover").hide();
+        });
       }
-    });
-    $(window).on('load', function() {
-      $("#cover").hide();
     });
   </script>
 </body>
