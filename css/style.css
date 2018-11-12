@@ -159,6 +159,7 @@ video {
   font-weight: 400;
   font-style: normal;
   font-family: "Droid Sans", sans-serif;
+  font-display: auto;
   vertical-align: baseline;
   background: transparent;
 }
@@ -210,6 +211,7 @@ header h1 {
   font-family: "Kameron", arial, serif;
   font-weight: 400;
   font-size: 4em;
+  font-display: auto;
   letter-spacing: 0.03em;
 }
 header h2 {
@@ -226,6 +228,7 @@ section h1 {
   font-size: 2em;
   font-family: "Kameron", arial, serif;
   font-weight: 400;
+  font-display: auto;
   letter-spacing: 0.2em;
 }
 section section h1 {
@@ -233,6 +236,7 @@ section section h1 {
   margin-top: 1.5em;
   font-family: "Droid Sans", sans-serif;
   font-size: 1.2em;
+  font-display: auto;
   letter-spacing: 0.06em;
   font-weight: normal;
 }

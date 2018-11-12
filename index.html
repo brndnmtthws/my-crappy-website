@@ -4,19 +4,18 @@
 <head>
   <title>Brenden Matthews</title>
   <meta charset="utf-8" />
+  <meta name="Description" content="Personal Website of Brenden Matthews">
   <meta name="HandheldFriendly" content="true" />
-  <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, height=device-height" />
   <meta name="google-site-verification" content="S3YiA36QA7wLGXXD0Xim2XJKKoANsapp8NSGtYMrUe0" />
-  <script type="text/javascript" src="/js/js.js"></script>
-  <script src="https://use.fontawesome.com/5971047144.js"></script>
   <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <link href="https://fonts.googleapis.com/css?family=Kameron&v1" rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&v1" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="/css/css.css" type="text/css" media="screen" />
-
+  <link href="https://fonts.googleapis.com/css?family=Kameron&v1" rel='stylesheet' type='text/css' media="none" onload="if(media!='all')media='all'">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&v1" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+  <link rel="stylesheet" href="/css/css.css" type="text/css" media="none" onload="if(media!='screen')media='screen'">
   <link rel="icon" type="image/png" href="/favicon.ico" />
+  <link rel="preconnect" href="https://s3.amazonaws.com">
 </head>
 
 <body>
@@ -32,7 +31,7 @@
     <h2>Crappy artist, comedian, passionate technologist (computers).</h2>
     <div class="myface">
       <div class="faceitem">
-        <img src="/myface.webp" class="rounded" />
+        <img src="/myface.webp" class="rounded" alt="A photo of my face" />
       </div>
     </div>
   </header>
@@ -80,7 +79,7 @@
     <h1>Some Achievements I've Unlocked</h1>
     <a href="/nyan.gif">
       <figure id="nyan">
-        <img alt="Nyan" src="/nyan.gif" />
+        <img alt="Nyan cat" src="/nyan.gif" />
       </figure>
     </a>
     <ul>
@@ -151,7 +150,7 @@
     <h1>Links</h1>
     <a href="/snapcode.png">
       <figure id="snapcode">
-        <img alt="Snapcode" src="/snapcode-small.png" />
+        <img alt="My Snapcode" src="/snapcode-small.png" />
       </figure>
     </a>
     <ul>
@@ -178,6 +177,8 @@
         Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
   </footer>
 
+  <script type="text/javascript" src="/js/js.js"></script>
+  <script src="https://use.fontawesome.com/5971047144.js"></script>
   <script type="text/javascript">
     clippy.load('Links', function (agent) {
       agent.show();
