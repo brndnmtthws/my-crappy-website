@@ -11,11 +11,9 @@
   <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <link href="https://fonts.googleapis.com/css?family=Kameron&v1" rel='stylesheet' type='text/css' media="none" onload="if(media!='all')media='all'">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&v1" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
-  <link rel="stylesheet" href="/css/css.css" type="text/css" media="none" onload="if(media!='screen')media='screen'">
+  <link rel="stylesheet" href="/css/css.css" type="text/css" />
   <link rel="icon" type="image/png" href="/favicon.ico" />
-  <link rel="preconnect" href="https://s3.amazonaws.com">
+  <link rel="preconnect" href="https://s3.amazonaws.com" />
 </head>
 
 <body>
@@ -23,10 +21,8 @@
     <video id="player" src="/welcome-a.mp4"></video>
   </div>
   <header>
-    <h1>Brenden Matthews <br /><a href="https://www.youtube.com/channel/UCE8lKr0l7c9M2njUbrMzS6g"><i class="fa fa-youtube"
-          aria-hidden="true"></i></a> <a href="https://twitter.com/brndnmtthws"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a href="https://instagram.com/brndnmtthws"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a href="https://github.com/brndnmtthws"><i
-          class="fa fa-github" aria-hidden="true"></i></a></h1>
+    <h1>Brenden Matthews <br /><a href="https://www.youtube.com/channel/UCE8lKr0l7c9M2njUbrMzS6g"><i class="fa fa-youtube" aria-hidden="true"></i></a> <a href="https://twitter.com/brndnmtthws"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://instagram.com/brndnmtthws"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a href="https://github.com/brndnmtthws"><i class="fa fa-github" aria-hidden="true"></i></a></h1>
     <h2><a href="#" id="hello-please">"hello?" ▶️</a></h2>
     <h2>Crappy artist, comedian, passionate technologist (computers).</h2>
     <div class="myface">
@@ -35,8 +31,7 @@
       </div>
     </div>
   </header>
-  <a href="https://github.com/brndnmtthws/my-crappy-website"><img style="position: absolute; top: 0; right: 0; border: 0;"
-      src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+  <a href="https://github.com/brndnmtthws/my-crappy-website"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
       alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
   </a>
 
@@ -179,8 +174,9 @@
 
   <script type="text/javascript" src="/js/js.js"></script>
   <script src="https://use.fontawesome.com/5971047144.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
   <script type="text/javascript">
-    clippy.load('Links', function (agent) {
+    clippy.load('Links', function(agent) {
       agent.show();
       fn = (function worker() {
         agent.animate();
@@ -188,21 +184,30 @@
       });
       setTimeout(fn, Math.random() * 10000 + 5000);
     });
-    $('#hello-please').click(function () {
+    $('#hello-please').click(function() {
       $('#hello-video').fadeIn();
       $('#player').fadeIn();
       $('#player').get(0).play();
-      $('#player').on('ended', function () {
+      $('#player').on('ended', function() {
         $('#hello-video').fadeOut();
         $('#player').fadeOut();
-        var vids = ["a","b","c","d","e","f"];
+        var vids = ["a", "b", "c", "d", "e", "f"];
         var w = vids[Math.floor(Math.random() * vids.length)];
         setTimeout(() => {
           $('#player').attr("src", "/welcome-" + w + ".mp4");
         }, 250);
       });
-      $('')
     })
+    WebFont.load({
+      google: {
+        families: ['Droid Sans', 'Kameron']
+      },
+      active: function() {
+        $(document).ready(function() {
+          document.getElementsByTagName("html")[0].style.visibility = "visible";
+        });
+      }
+    });
   </script>
 </body>
 
