@@ -11,9 +11,9 @@
   <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="stylesheet" href="/css/css.css" type="text/css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
-  <link rel="icon" type="image/png" href="/favicon.ico" />
   <link rel="preconnect" href="https://s3.amazonaws.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
 </head>
@@ -202,14 +202,23 @@
         }, 250);
       });
     })
+    var fontsActive = false;
+    var windowLoaded = false;
     WebFont.load({
       google: {
         families: ['Droid Sans', 'Kameron']
       },
       active: function() {
-        $(window).on('load', function() {
+        fontsActive = true;
+        if (windowLoaded) {
           $("#cover").hide();
-        });
+        }
+      }
+    });
+    $(window).on('load', function() {
+      windowLoaded = true;
+      if (fontsActive) {
+        $("#cover").hide();
       }
     });
   </script>
