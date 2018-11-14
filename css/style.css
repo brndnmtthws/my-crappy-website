@@ -360,7 +360,7 @@ footer p {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation: pulsate 1.5s ease-out;
   -webkit-animation-iteration-count: infinite;
   opacity: 0.5;
 }
@@ -372,7 +372,7 @@ footer p {
   }
 
   50% {
-    transform: scale(3);
+    transform: scale(4);
     opacity: 1.0;
   }
 
