@@ -355,29 +355,31 @@ footer p {
 #cover p {
   font-family: sans-serif;
   margin: 0;
+  overflow: visible;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%);
   -webkit-animation: pulsate 1.5s ease-out;
   -webkit-animation-iteration-count: infinite;
   opacity: 0.5;
+  transform: scale(0.5) translate(-25%, -25%);
+
 }
 
 @-webkit-keyframes pulsate {
   0% {
-    transform: scale(1);
+    transform: scale(0.5) translate(-50%, -50%);
     opacity: 0.5;
   }
 
   50% {
-    transform: scale(4);
+    transform: scale(2) translate(-20%, -20%);
     opacity: 1.0;
   }
 
   100% {
-    transform: scale(1);
+    transform: scale(0.5) translate(-50%, -50%);
     opacity: 0.5;
   }
 }
