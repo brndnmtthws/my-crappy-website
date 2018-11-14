@@ -24,7 +24,7 @@
     <p>😀</p>
   </div>
   <div id="hello-video" class="video-content">
-    <video id="player" src="/welcome-a.mp4"></video>
+    <video id="player" src="/welcome-a.mp4" preload="metadata"></video>
   </div>
   <header>
     <h1>Brenden Matthews <br /><a href="https://www.youtube.com/channel/UCE8lKr0l7c9M2njUbrMzS6g"><i class="fab fa-youtube" aria-hidden="true"></i></a> <a href="https://twitter.com/brndnmtthws"><i class="fab fa-twitter" aria-hidden="true"></i></a>
@@ -212,16 +212,19 @@
       active: function() {
         fontsActive = true;
         if (windowLoaded) {
-          $("#cover").hide();
+          $("#cover").fadeOut(200);
         }
       }
     });
     $(window).on('load', function() {
       windowLoaded = true;
       if (fontsActive) {
-        $("#cover").hide();
+        $("#cover").fadeOut(200);
       }
     });
+    setTimeout(function() {
+      $("#cover").fadeOut(200);
+    }, 5000)
   </script>
 </body>
 
