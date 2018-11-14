@@ -333,11 +333,11 @@ footer p {
 
 .parallax {
   background-image: url("/I-AM-BREM.jpg");
-  min-height: 140px;
+  min-height: 10vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #cover {
@@ -364,7 +364,6 @@ footer p {
   -webkit-animation-iteration-count: infinite;
   opacity: 0.5;
   transform: scale(0.5) translate(-25%, -25%);
-
 }
 
 @-webkit-keyframes pulsate {
