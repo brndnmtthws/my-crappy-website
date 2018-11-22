@@ -291,6 +291,13 @@
       mouse.y = event.pageY;
     });
 
+    addEventListener("touchmove", function (event) {
+      event.preventDefault();
+      mouse.x = event.pageX;
+      mouse.y = event.pageY;
+    });
+
+
     function animate() {
       draw();
       requestAnimationFrame(animate);
