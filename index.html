@@ -266,6 +266,9 @@
       this.node.style.left = this.x + "px";
       this.node.style.top = this.y + "px";
     };
+    Dot.prototype.disappear = function () {
+      this.node.style = 'none';
+    };
 
     for (var i = 0; i < 10; i++) {
       var d = new Dot();
@@ -281,7 +284,12 @@
 
         dot.x = dot.x + (nextDot.x - dot.x) * 0.5;
         dot.y = dot.y + (nextDot.y - dot.y) * 0.5;
-        dot.draw();
+
+        if (Math.abs(mouse.x - dot.x) >= 1 || Math.abs(mouse.y - dot.y) >= 1) {
+          dot.draw();
+        } else {
+          dot.disappear();
+        }
       });
     }
 

@@ -168,6 +168,7 @@ video {
 
 html {
   font-size: 100.01%;
+  cursor: url("/star.png"), auto;
 }
 
 body {
@@ -202,6 +203,7 @@ a {
 
 a:hover {
   color: #ab8a61;
+  cursor: url("/joy.png"), auto;
 }
 
 strong.disclaimer {
@@ -387,6 +389,6 @@ footer p {
   position: absolute;
   z-index: 9998;
   pointer-events: none;
-  border-radius: 3px;
+  border-radius: 0px;
   text-shadow: 0px 0px 5px #fafafa;
 }
