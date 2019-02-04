@@ -1,8 +1,10 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ["build", "-t", "gcr.io/golden-agency-161021/github-brndnmtthws-my-crappy-website:$REVISION_ID", "."]
+  args: ["pull", "gcr.io/golden-agency-161021/github-brndnmtthws-my-crappy-website:latest"]
 - name: 'gcr.io/cloud-builders/docker'
-  args: ["push", "gcr.io/golden-agency-161021/github-brndnmtthws-my-crappy-website:$REVISION_ID"]
+  args: ["build", "-t", "gcr.io/golden-agency-161021/github-brndnmtthws-my-crappy-website:$REVISION_ID", "-t", "gcr.io/golden-agency-161021/github-brndnmtthws-my-crappy-website:latest", "."]
+- name: 'gcr.io/cloud-builders/docker'
+  args: ["push", "gcr.io/golden-agency-161021/github-brndnmtthws-my-crappy-website:$REVISION_ID", "gcr.io/golden-agency-161021/github-brndnmtthws-my-crappy-website:latest"]
 - name: 'gcr.io/cloud-builders/kubectl'
   args:
   - set
